@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Funq.Composition</name>
+    </assembly>
+    <members>
+        <member name="T:System.ComponentModel.Composition.ImportingConstructorAttribute">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;ImportingConstructorAttribute&quot;]/*"/>
+        </member>
+        <member name="T:System.ComponentModel.Composition.InheritedExportAttribute">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;InheritedExportAttribute&quot;]/*"/>
+        </member>
+        <member name="T:System.ComponentModel.Composition.ExportAttribute">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;ExportAttribute&quot;]/*"/>
+        </member>
+        <member name="M:System.ComponentModel.Composition.ExportAttribute.#ctor">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;ExportAttribute.ctor&quot;]/*"/>
+        </member>
+        <member name="M:System.ComponentModel.Composition.ExportAttribute.#ctor(System.String)">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;ExportAttribute.ctor(string)&quot;]/*"/>
+        </member>
+        <member name="M:System.ComponentModel.Composition.ExportAttribute.#ctor(System.Type)">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;ExportAttribute.ctor(Type)&quot;]/*"/>
+        </member>
+        <member name="M:System.ComponentModel.Composition.ExportAttribute.#ctor(System.String,System.Type)">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;ExportAttribute.ctor(string, Type)&quot;]/*"/>
+        </member>
+        <member name="P:System.ComponentModel.Composition.ExportAttribute.ContractType">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;ExportAttribute.ContractType&quot;]/*"/>
+        </member>
+        <member name="P:System.ComponentModel.Composition.ExportAttribute.ContractName">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;ExportAttribute.ContractName&quot;]/*"/>
+        </member>
+        <member name="M:System.ComponentModel.Composition.InheritedExportAttribute.#ctor">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;ExportAttribute.ctor&quot;]/*"/>
+        </member>
+        <member name="M:System.ComponentModel.Composition.InheritedExportAttribute.#ctor(System.String)">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;ExportAttribute.ctor(string)&quot;]/*"/>
+        </member>
+        <member name="M:System.ComponentModel.Composition.InheritedExportAttribute.#ctor(System.Type)">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;ExportAttribute.ctor(Type)&quot;]/*"/>
+        </member>
+        <member name="M:System.ComponentModel.Composition.InheritedExportAttribute.#ctor(System.String,System.Type)">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;ExportAttribute.ctor(string, Type)&quot;]/*"/>
+        </member>
+        <member name="T:System.ComponentModel.Composition.CreationPolicy">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;CreationPolicy&quot;]/*"/>
+        </member>
+        <member name="F:System.ComponentModel.Composition.CreationPolicy.Any">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;CreationPolicy.Any&quot;]/*"/>
+        </member>
+        <member name="F:System.ComponentModel.Composition.CreationPolicy.Shared">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;CreationPolicy.Shared&quot;]/*"/>
+        </member>
+        <member name="F:System.ComponentModel.Composition.CreationPolicy.NonShared">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;CreationPolicy.NonShared&quot;]/*"/>
+        </member>
+        <member name="T:System.ComponentModel.Composition.ImportAttribute">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;ImportAttribute&quot;]/*"/>
+        </member>
+        <member name="M:System.ComponentModel.Composition.ImportAttribute.#ctor">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;ImportAttribute.ctor&quot;]/*"/>
+        </member>
+        <member name="M:System.ComponentModel.Composition.ImportAttribute.#ctor(System.String)">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;ImportAttribute.ctor(string)&quot;]/*"/>
+        </member>
+        <member name="M:System.ComponentModel.Composition.ImportAttribute.#ctor(System.Type)">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;ImportAttribute.ctor(Type)&quot;]/*"/>
+        </member>
+        <member name="M:System.ComponentModel.Composition.ImportAttribute.#ctor(System.String,System.Type)">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;ImportAttribute.ctor(string, Type)&quot;]/*"/>
+        </member>
+        <member name="P:System.ComponentModel.Composition.ImportAttribute.AllowDefault">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;ImportAttribute.AllowDefault&quot;]/*"/>
+        </member>
+        <member name="P:System.ComponentModel.Composition.ImportAttribute.ContractType">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;ImportAttribute.ContractType&quot;]/*"/>
+        </member>
+        <member name="P:System.ComponentModel.Composition.ImportAttribute.ContractName">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;ImportAttribute.ContractName&quot;]/*"/>
+        </member>
+        <member name="T:System.ComponentModel.Composition.PartCreationPolicyAttribute">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;PartCreationPolicyAttribute&quot;]/*"/>
+        </member>
+        <member name="M:System.ComponentModel.Composition.PartCreationPolicyAttribute.#ctor(System.ComponentModel.Composition.CreationPolicy)">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;PartCreationPolicyAttribute.ctor&quot;]/*"/>
+        </member>
+        <member name="P:System.ComponentModel.Composition.PartCreationPolicyAttribute.CreationPolicy">
+            <!-- No matching elements were found for the following include tag --><include file="Composition.xdoc" path="docs/doc[@for=&quot;PartCreationPolicyAttribute.CreationPolicy&quot;]/*"/>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<docs>
+	<doc for="GenerateFunqlet">
+		<summary>
+			Generates the source code for a funqlet that registers all exported types
+			in the calling project copy local references.
+		</summary>
+	</doc>
+	<doc for="GenerateFunqlet.OutputPath">
+		<summary>
+			Gets or sets the output path to leave the generated source code.
+		</summary>
+	</doc>
+	<doc for="GenerateFunqlet.TargetNamespace">
+		<summary>
+			Gets or sets the namespace of the generated funqlet.
+		</summary>
+	</doc>
+	<doc for="GenerateFunqlet.Assemblies">
+		<summary>
+			Gets or sets the assembly references to process.
+		</summary>
+	</doc>
+	<doc for="GenerateFunqlet.Funqlet">
+		<summary>
+			Gets the generated funqlet source file.
+		</summary>
+	</doc>
+	<doc for="GenerateFunqlet.Execute">
+		<summary>
+			Processes all <see cref="Assemblies"/> and builds a funqlet using
+			all the composition attributes.
+		</summary>
+	</doc>
+	<doc for="GenerateFunqlet">
+	</doc>
+	<doc for="GenerateFunqlet">
+	</doc>
+</docs>

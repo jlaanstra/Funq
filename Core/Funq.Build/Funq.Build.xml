@@ -1,0 +1,328 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Funq.Build</name>
+    </assembly>
+    <members>
+        <member name="T:Funq.Build.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Funq.Build.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Funq.Build.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Funq.Build.Properties.Resources.GenerateSuccessfull">
+            <summary>
+              Looks up a localized string similar to Generated funqlet source {0}.
+            </summary>
+        </member>
+        <member name="P:Funq.Build.Properties.Resources.ImportingConstructorMissing">
+            <summary>
+              Looks up a localized string similar to Cannot create an instance of type &apos;{0}&apos; because a constructor could not be selected for construction. Ensure that the type either has a default constructor, or a single constructor marked with the &apos;System.ComponentModel.Composition.ImportingConstructorAttribute&apos;..
+            </summary>
+        </member>
+        <member name="P:Funq.Build.Properties.Resources.IncompatibleExportImplementation">
+            <summary>
+              Looks up a localized string similar to Type &apos;{0}&apos; is incompatible with its declared export type of &apos;{1}&apos;..
+            </summary>
+        </member>
+        <member name="T:Funq.Build.CodeGeneration">
+            <summary>
+            Base class with general-purpose methods useful for code generation.
+            </summary>
+        </member>
+        <member name="F:Funq.Build.CodeGeneration.IsCSharpGenericType">
+            <summary>
+            Checks whether the type contains the &lt; and &gt; characters that denotes a C# generic type.
+            </summary>
+        </member>
+        <member name="F:Funq.Build.CodeGeneration.IsFullGenericType">
+            <summary>
+            Checks whether the type contains the ` but also the generic type arguments with [[ and ]].
+            </summary>
+        </member>
+        <member name="F:Funq.Build.CodeGeneration.IsNestedType">
+            <summary>
+            Checks whether the type is a nested type by finding the '+' symbol.
+            </summary>
+        </member>
+        <member name="M:Funq.Build.CodeGeneration.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Funq.Build.CodeGeneration"/> class.
+            </summary>
+        </member>
+        <member name="M:Funq.Build.CodeGeneration.BeginInit">
+            <summary>
+            Signals the object that initialization is starting.
+            </summary>
+        </member>
+        <member name="M:Funq.Build.CodeGeneration.EndInit">
+            <summary>
+            Completes initialization by processing the type name map and 
+            searches for potential simplifications to type names.
+            </summary>
+        </member>
+        <member name="M:Funq.Build.CodeGeneration.AddType(System.Type)">
+            <summary>
+            Adds the given type to the type map if it wasn't added already.
+            </summary>
+        </member>
+        <member name="M:Funq.Build.CodeGeneration.AddType(System.String)">
+            <summary>
+            Adds the given type to the type map if it wasn't added already.
+            </summary>
+        </member>
+        <member name="M:Funq.Build.CodeGeneration.AddTypes(System.Reflection.Assembly)">
+            <summary>
+            Adds all public types of the given assembly to the type map.
+            </summary>
+        </member>
+        <member name="M:Funq.Build.CodeGeneration.AddTypes(System.Collections.Generic.IEnumerable{System.Type})">
+            <summary>
+            Adds a batch of new types to the map if they haven't been added already.
+            </summary>
+        </member>
+        <member name="M:Funq.Build.CodeGeneration.AddTypes(System.String[])">
+            <summary>
+            Adds a batch of new types to the map if they haven't been added already.
+            </summary>
+        </member>
+        <member name="M:Funq.Build.CodeGeneration.AddTypes(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Adds a batch of new types to the map if they haven't been added already.
+            </summary>
+        </member>
+        <member name="M:Funq.Build.CodeGeneration.GetTypeName(System.Type)">
+            <summary>
+            Gets the name of the type that can be used in code generation, considering 
+            the already determined <see cref="P:Funq.Build.CodeGeneration.SafeImports"/>.
+            </summary>
+        </member>
+        <member name="M:Funq.Build.CodeGeneration.GetTypeName(System.String)">
+            <summary>
+            Gets the name of the type that can be used in code generation, considering 
+            the already determined <see cref="P:Funq.Build.CodeGeneration.SafeImports"/>.
+            </summary>
+        </member>
+        <member name="M:Funq.Build.CodeGeneration.ToCSharpString(System.Reflection.CustomAttributeTypedArgument)">
+            <summary>
+            Returns a valid C# representation of a typed argument that can be 
+            used in a custom attribute for code generation.
+            </summary>
+        </member>
+        <member name="M:Funq.Build.CodeGeneration.BuildSafeTypeNames">
+            <summary>
+            Searches the type map for potential simplifications to type names. 
+            All type names that are unique across all used namespaces are 
+            turned into their simple type name (without the namespace).
+            </summary>
+        </member>
+        <member name="M:Funq.Build.CodeGeneration.BuildSafeImports">
+            <summary>
+            From the type map, finds those namespaces that can be safely imported ("using" in C#) 
+            without causing type collisions among the type names in the map.
+            </summary>
+        </member>
+        <member name="M:Funq.Build.CodeGeneration.SanitizeGenerics(System.String)">
+            <summary>
+            Sanitizes the generics.
+            </summary>
+            <param name="typeName">Name of the type.</param>
+        </member>
+        <member name="P:Funq.Build.CodeGeneration.TypeNameMap">
+            <summary>
+            Gets the type map built so far, where the keys are the full type names, 
+            and the value is the type name to use in code generation.
+            </summary>
+        </member>
+        <member name="P:Funq.Build.CodeGeneration.SafeImports">
+            <summary>
+            Gets the list of safe imports for type map in use.
+            </summary>
+        </member>
+        <member name="F:Funq.Build.CodeGeneration.Expressions.GenericParameters">
+            <summary>
+            Matches the generic type and its parameter type names with C# syntax: 
+            for System.IEnumerable{System.Boolean}, matches System.IEnumerable and System.Boolean
+            </summary>
+        </member>
+        <member name="F:Funq.Build.CodeGeneration.Expressions.ComaWithoutSpace">
+            <summary>
+            Matches two identifiers that are separated by a coma but without a whitespace after the coma, such as Boolean,String.
+            </summary>
+        </member>
+        <member name="F:Funq.Build.CodeGeneration.Expressions.FullAssemblyName">
+            <summary>
+            Matches the assembly part of an assembly qualified type name (i.e. , mscorlib, Version=..., Culture=..., PublicKeyToken=...).
+            </summary>
+        </member>
+        <member name="F:Funq.Build.CodeGeneration.Expressions.TypeNameWithBrackets">
+            <summary>
+            Matches a type name that has square brackets surrounding it, like [System.Boolean].
+            </summary>
+        </member>
+        <member name="F:Funq.Build.CodeGeneration.Expressions.DoubleOpenBrackets">
+            <summary>
+            Matches [[
+            </summary>
+        </member>
+        <member name="F:Funq.Build.CodeGeneration.Expressions.DoubleCloseBrackets">
+            <summary>
+            Matches ]]
+            </summary>
+        </member>
+        <member name="F:Funq.Build.CodeGeneration.Expressions.SingleOpenBracket">
+            <summary>
+            Matches [
+            </summary>
+        </member>
+        <member name="F:Funq.Build.CodeGeneration.Expressions.SingleCloseBracket">
+            <summary>
+            Matches ]
+            </summary>
+        </member>
+        <member name="F:Funq.Build.CodeGeneration.Expressions.GenericsArity">
+            <summary>
+            Matches the arity part of a generics type, like IEnumerable`1 (would match `1).
+            </summary>
+        </member>
+        <member name="F:Funq.Build.CodeGeneration.Expressions.GenericsArityAndBracket">
+            <summary>
+            Matches the arity part of a generics type, like IEnumerable`1[[System.Boolean]] (would match `1[).
+            </summary>
+        </member>
+        <member name="T:Funq.Build.FunqletTemplateBase">
+            <summary>
+            Base class for this transformation
+            </summary>
+        </member>
+        <member name="M:Funq.Build.FunqletTemplateBase.Write(System.String)">
+            <summary>
+            Write text directly into the generated output
+            </summary>
+        </member>
+        <member name="M:Funq.Build.FunqletTemplateBase.WriteLine(System.String)">
+            <summary>
+            Write text directly into the generated output
+            </summary>
+        </member>
+        <member name="M:Funq.Build.FunqletTemplateBase.Write(System.String,System.Object[])">
+            <summary>
+            Write formatted text directly into the generated output
+            </summary>
+        </member>
+        <member name="M:Funq.Build.FunqletTemplateBase.WriteLine(System.String,System.Object[])">
+            <summary>
+            Write formatted text directly into the generated output
+            </summary>
+        </member>
+        <member name="M:Funq.Build.FunqletTemplateBase.Error(System.String)">
+            <summary>
+            Raise an error
+            </summary>
+        </member>
+        <member name="M:Funq.Build.FunqletTemplateBase.Warning(System.String)">
+            <summary>
+            Raise a warning
+            </summary>
+        </member>
+        <member name="M:Funq.Build.FunqletTemplateBase.PushIndent(System.String)">
+            <summary>
+            Increase the indent
+            </summary>
+        </member>
+        <member name="M:Funq.Build.FunqletTemplateBase.PopIndent">
+            <summary>
+            Remove the last indent that was added with PushIndent
+            </summary>
+        </member>
+        <member name="M:Funq.Build.FunqletTemplateBase.ClearIndent">
+            <summary>
+            Remove any indentation
+            </summary>
+        </member>
+        <member name="P:Funq.Build.FunqletTemplateBase.GenerationEnvironment">
+            <summary>
+            The string builder that generation-time code is using to assemble generated output
+            </summary>
+        </member>
+        <member name="P:Funq.Build.FunqletTemplateBase.Errors">
+            <summary>
+            The error collection for the generation process
+            </summary>
+        </member>
+        <member name="P:Funq.Build.FunqletTemplateBase.indentLengths">
+            <summary>
+            A list of the lengths of each indent that was added with PushIndent
+            </summary>
+        </member>
+        <member name="P:Funq.Build.FunqletTemplateBase.CurrentIndent">
+            <summary>
+            Gets the current indent we use when adding lines to the output
+            </summary>
+        </member>
+        <member name="P:Funq.Build.FunqletTemplateBase.Session">
+            <summary>
+            Current transformation session
+            </summary>
+        </member>
+        <member name="P:Funq.Build.FunqletTemplate.TargetNamespace">
+            <summary>
+            Target namespace passed-in by the task for the generated funqlet class.
+            </summary>
+        </member>
+        <member name="P:Funq.Build.FunqletTemplate.Exports">
+            <summary>
+            Exports from the assemblies with copylocal=true.
+            </summary>
+        </member>
+        <member name="T:Funq.Build.FunqletTemplate.ToStringInstanceHelper">
+            <summary>
+            Utility class to produce culture-oriented representation of an object as a string.
+            </summary>
+        </member>
+        <member name="M:Funq.Build.FunqletTemplate.ToStringInstanceHelper.ToStringWithCulture(System.Object)">
+            <summary>
+            This is called from the compile/run appdomain to convert objects within an expression block to a string
+            </summary>
+        </member>
+        <member name="P:Funq.Build.FunqletTemplate.ToStringInstanceHelper.FormatProvider">
+            <summary>
+            Gets or sets format provider to be used by ToStringWithCulture method.
+            </summary>
+        </member>
+        <member name="T:Funq.Build.GenerateFunqlet">
+            <summary>			
+		</summary>
+        </member>
+        <member name="M:Funq.Build.GenerateFunqlet.Execute">
+            <summary>
+		</summary>
+        </member>
+        <member name="P:Funq.Build.GenerateFunqlet.OutputPath">
+            <summary>
+		</summary>
+        </member>
+        <member name="P:Funq.Build.GenerateFunqlet.TargetNamespace">
+            <summary>
+		</summary>
+        </member>
+        <member name="P:Funq.Build.GenerateFunqlet.Assemblies">
+            <summary>
+		</summary>
+        </member>
+        <member name="P:Funq.Build.GenerateFunqlet.Funqlet">
+            <summary>
+		</summary>
+        </member>
+    </members>
+</doc>
