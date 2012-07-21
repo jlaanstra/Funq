@@ -39,7 +39,7 @@ using Windows.ApplicationModel.Resources;
 namespace Funq
 {
 	/// <include file='Funq.xdoc' path='docs/doc[@for="Container"]/*'/>
-	public sealed partial class Container : IDisposable
+	public sealed partial class Container : IDisposable, Funq.IContainer
 	{
 		Dictionary<ServiceKey, ServiceEntry> services = new Dictionary<ServiceKey, ServiceEntry>();
 		// Disposable components include factory-scoped instances that we don't keep 

@@ -162,6 +162,7 @@
     <Compile Include="..\..\GlobalAssemblyInfo.cs">
       <Link>Properties\GlobalAssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="IContainer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\Core\Funq\Funq.xdoc">
