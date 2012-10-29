@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Funq")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Funq: a fast DI container you can understand.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Clarius Consulting")]
 [assembly: AssemblyProduct("Funq Dependency Injection Framework")]
