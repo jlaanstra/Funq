@@ -6,12 +6,12 @@
     <title>Methylium.Funq</title>
     <authors>$author$</authors>
     <owners>$author$</owners>
-    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
-    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
+    <licenseUrl>https://github.com/jlaanstra/Funq/blob/master/license.txt</licenseUrl>
+    <projectUrl>https://github.com/jlaanstra/Funq/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <releaseNotes>Nuget package for Funq.</releaseNotes>
     <copyright>Copyright 2012</copyright>
-    <tags>Tag1 Tag2</tags>
+    <tags>funq dependency injection</tags>
   </metadata>
 </package>
